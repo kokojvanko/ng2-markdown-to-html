@@ -22,7 +22,8 @@ import 'prismjs/components/prism-typescript';
 @Component({
   selector: 'markdown-to-html, [markdown-to-html]',
   template: '<ng-content></ng-content>',
-  styleUrls: ['./markdown-to-html.component.scss'],
+  moduleId: module.id,
+  styleUrls: ['markdown-to-html.component.scss'],
 })
 export class MarkdownToHtmlComponent implements AfterViewInit, OnChanges {
   @Input() src: string;
